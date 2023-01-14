@@ -1,3 +1,14 @@
+/* Branding */
+/*  Terracotta: #D4805C
+	Green: #B2BAA3
+	Cream: #FAF5EE
+	Black: #282828
+	Gray: #6965F
+ */
+
+
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -20,7 +31,7 @@
 	padding-top: 2rem;
 	position: relative;
 	align-items: center;
-	position: fixed;
+/*	position: fixed;  will enable this in the future updates :P*/
 	top: 0;
 	left: 0;
 	right: 0;
@@ -52,13 +63,6 @@
 	color: black;
 }
 
-/* Hero Section */
-
-/*main {
-	padding-top: 106px;
-}*/
-
-
 .section-hero {
 	/*height: 100vh;
 	display: flex;
@@ -70,7 +74,7 @@
 /*	height: 100vh;*/
 }
 
-.greeting {
+.subheadline-1 {
 	letter-spacing: 0.1rem;
 }
 
@@ -84,7 +88,6 @@
 
 .left-hero {
 	background-color: #FAF5EE;
-/*	padding-top: 106px;*/
 	height: 100vh;
 	display: flex;
 	align-items: center;
@@ -102,6 +105,13 @@
 	border-radius: 30px;
 }
 
+.cta-button:hover {
+	cursor: pointer;
+	background-color: #B2BAA3;
+	color: white;
+	border: 1px solid #B2BAA3;
+}
+
 .right-hero {
 /*	padding-top: 106px;*/
 	height: 100vh;
@@ -114,14 +124,54 @@
 	max-width: 30rem;
 }
 
+/* About Section */
 
+h3 {
+	color: #D4805C;
+	font-family: "Spectral", sans-serif;
+	font-size: 2.5rem;
+}
 
+p {
+	color: #282828;
+	font-size: 1.25rem;
+}
 
+.about-container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-top: 9rem;
+	padding-bottom: 4rem;
+}
 
+/* Projects Section */
+.projects-section {
+	background-color: #FAF5EE;
 
+}
 
+.projects-text {
+	background-color: #FAF5EE;
+/*	height: 75vh;*/
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 4rem;
+	padding-top: 5rem;
+/*	padding-bottom: 5rem;*/
+}
 
+/*.project-images-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 1.2rem;
+}*/
+	
 
+/*.project-images {
+	height: 450px;
+}*/
 
 
 
