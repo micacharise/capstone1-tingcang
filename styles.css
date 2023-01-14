@@ -158,7 +158,7 @@ p {
 	flex-direction: column;
 	padding-left: 4rem;
 	padding-top: 5rem;
-/*	padding-bottom: 5rem;*/
+	padding-bottom: 2rem;
 }
 
 /*.project-images-container {
@@ -172,6 +172,12 @@ p {
 /*.project-images {
 	height: 450px;
 }*/
+
+.margin-left {
+	margin-left: 0px !important;
+	padding: 0 4rem;
+	margin-bottom: 5rem;
+}
 
 
 
