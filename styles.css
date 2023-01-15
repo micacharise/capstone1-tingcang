@@ -49,6 +49,13 @@
 	align-items: center;
 }
 
+.main-nav-link:hover {
+	cursor: pointer;
+	color: #B2BAA3;
+	transition: all 0.2s ease-in-out;
+}
+
+
 .main-nav-list {
 	display: flex;
 	list-style: none;
@@ -273,6 +280,12 @@ input[type="email"] {
 .footer-nav-list a {
 	text-decoration: none;
 	color: #FAF5EE;
+}
+
+.footer-nav-link:hover {
+	cursor: pointer;
+	color: #69655F;
+	transition: all 0.2s ease-in-out;
 }
 
 .contact-list-container {
