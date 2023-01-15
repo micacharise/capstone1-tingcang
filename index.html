@@ -53,7 +53,7 @@
 					<a class="main-nav-link" href="#services">Services</a>
 				</li> -->
 				<li>
-					<a class="main-nav-link" href="#contact">Contact</a>
+					<a class="main-nav-link" href="#cta">Contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -73,7 +73,7 @@
 					<div>
 						<p class="subheadline-1 text-uppercase">Kamusta, I'm Mica!</p>
 						<h1 class="hero-title">Designing for impact, developing for success</h1>
-						<a href="#" class="cta-button">Know Me More ✨</a>
+						<a href="#cta" class="cta-button" id="hero">Work With Me ✨</a>
 					</div>
 					
 				</div>
@@ -92,7 +92,7 @@
 					<p class="text-uppercase subheadline-2">What I Do</p>
 					<h3 class="m-5 px-auto">I help e-commerce businesses increase their online sales through effective design and development solutions.</h3>
 					<p class="m-5 px-auto"> Whether it's creating a visually appealing website or streamlining the checkout process, I use my expertise in design and development to enhance the user experience and drive conversions. From product pages to shopping carts, I take a holistic approach to design and development to ensure that every aspect of the customer journey is optimized for success.</p>
-					<a href="#" class="cta-button">Work With Me</a>
+					<a href="#" class="cta-button">Let's Collaborate! 🙌</a>
 				</div>
 			</div>
 		</section>
@@ -136,35 +136,45 @@
 
 
 		<!-- Contact Page -->
-		<section class="container-fluid" id="contact">
-			<div class="row">
+		<section class="container-fluid" id="cta">
+			<div class="row contact-container">
 				<div class="col left-contact">
-					<img src="./images/contact.jpeg" alt="Laptop on a Sofa" class="img-fluid"> 
+					<img src="./images/contact.jpeg" alt="Laptop on a Sofa" class="img-fluid contact-img"> 
 				</div>
 
-				<div class="col right-contact">
+				<div class="col right-contact text-center">
 					<div>
 						<div>
 							<p class="subheadline-1 text-uppercase px-auto ms-5">Contact Me</p>
 							<h1 class="hero-title px-auto ms-5">Let's Work Together</h1>
-							<p class="m-5 px-auto">I'd love to know your visions and see if I could help bring it to life! Let's get in touch by completing the form below.</p>
+							<p class="my-5 px-auto contact-desc">I'd love to know your visions and see if I could help bring it to life! Let's get in touch by completing the form below.</p>
 						</div>
 
 						<form action="https://www.google.com">
-							<div class="mb-3">
-								<label for="name"  class="form-label">Name</label>
-								<input type="text" class="form-control" id="name" required autocomplete></input>
+							<div class="form-fields">
+								<div class="name-email">
+									<div class="mb-3 pe-2 text-start">
+										<label for="name"  class="form-label text-uppercase form-text">Name</label>
+										<input type="text" class="form-control" id="name" required autocomplete/>
+									</div>
+									<div class="mb-3 text-start">
+										<label for="email" class="form-label text-uppercase form-text">Email</label>
+										<span class="text-danger">*</span>
+										<input type="email" class="form-control" id="email"/>
+									</div>
+								</div>
+								<div class="mb-3 text-start">
+									<label for="message"  class="form-label text-uppercase form-text">Message</label>
+									<span class="text-danger">*</span>
+									<textarea name="message" rows="5" class="form-control" id="name" required autocomplete></textarea>
+								</div>
+								<div class="btn-container">
+									<button type="submit" class="btn btn-primary send-message-btn">Send Message</button>
+								</div>
 							</div>
-							<div class="mb-3">
-								<label for="email" class="form-label">Email address</label>
-								<input type="email" class="form-control" id="email"></input>
-							</div>
-							<div class="mb-3">
-								<label for="message"  class="form-label">Message</label>
-								<textarea name="message" rows="5" class="form-controlid" id="name" required autocomplete></textarea>
-							</div>
+							
 
-							<button type="submit" class="btn btn-primary">Send Message</button>
+							
 						</form>
 					</div>
 				</div>
@@ -179,7 +189,8 @@
 				<div class="col-4">
 					<img src="./images/submark-white.png" class="footer-logo">
 				</div>
-				<div class="col-4 footer-col">
+
+				<div class="col-4 footer-col links-col">
 					<h4 class="subheadline-1 text-uppercase footer-header">Links</h4>
 					<ul class="footer-nav-list">
 						<li>
@@ -223,11 +234,6 @@
 				<p class="mt-3 copyright text-uppercase">COPYRIGHT © 2023 · Made with ♡ by Mica</p>
 			</div>
 		</footer>
-
-
-
-
-
 
 
 	</main>

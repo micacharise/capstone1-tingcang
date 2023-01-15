@@ -180,9 +180,64 @@ p {
 	padding-bottom: 3rem;
 }
 
+
+/* Contact Section */
+.contact-container {
+}
+
+.contact-img {
+	/*height: 700px;
+	width: 720px;*/
+	object-fit: cover;
+	height: 100%;
+}
+
+.left-contact {
+	padding-left: 0px !important;
+}
+
+.right-contact {
+	padding-top: 6rem;
+	padding-bottom: 5rem;
+}
+
+.contact-desc {
+	margin: 6px 6.7rem;
+    font-size: 1rem;
+}
+
+.name-email {
+	display: flex;
+}
+
+input[type="text"] {
+    width: 233px;
+}
+
+input[type="email"] {
+    width: 233px;
+}
+
+.form-fields {
+	margin-right: 113px;
+	margin-left: 113px;
+}
+
+.form-text {
+	font-size: 0.75rem;
+}
+
+.send-message-btn {
+	background-color: #D4805C;
+	border: none;
+	width: 100%;
+	padding: 0.75rem;
+}
+
 /* Footer Section */
 .footer-section {
 	background-color: #B2BAA3;
+	margin-right: 0;
 }
 
 .footer-logo {
@@ -239,6 +294,6 @@ p {
     line-height: 1.6;
     color: #FAF5EE;
     margin-top: auto;
-    margin-left: 8rem;
+    padding-left: 8rem;
 }
 
