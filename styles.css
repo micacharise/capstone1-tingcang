@@ -3,7 +3,7 @@
 	Green: #B2BAA3
 	Cream: #FAF5EE
 	Black: #282828
-	Gray: #6965F
+	Gray: #69655F
  */
 
 
@@ -104,6 +104,7 @@
 	display: inline-block;
 	border-radius: 30px;
 	width: auto;
+	transition: all 0.3s ease-in-out;
 }
 
 .cta-button:hover {
@@ -111,6 +112,7 @@
 	background-color: #B2BAA3;
 	color: white;
 	border: 1px solid #B2BAA3;
+
 }
 
 .right-hero {
@@ -232,6 +234,11 @@ input[type="email"] {
 	border: none;
 	width: 100%;
 	padding: 0.75rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.send-message-btn:hover {
+	background-color: #B2BAA3;
 }
 
 /* Footer Section */
@@ -295,5 +302,6 @@ input[type="email"] {
     color: #FAF5EE;
     margin-top: auto;
     padding-left: 8rem;
+    padding-bottom: 2rem;
 }
 
