@@ -49,9 +49,9 @@
 
 		<nav class="main-nav">
 			<ul class="main-nav-list">
-				<li>
+				<!-- <li>
 					<a class="main-nav-link" href="#services">Services</a>
-				</li>
+				</li> -->
 				<li>
 					<a class="main-nav-link" href="#contact">Contact</a>
 				</li>
@@ -86,12 +86,13 @@
 
 		<!-- About Section -->
 
-		<section class="row about-container container-fluid">
+		<section class="row about-container container-fluid" id="about">
 			<div class="col text-center ">
 				<div>
 					<p class="text-uppercase subheadline-2">What I Do</p>
 					<h3 class="m-5 px-auto">I help e-commerce businesses increase their online sales through effective design and development solutions.</h3>
 					<p class="m-5 px-auto"> Whether it's creating a visually appealing website or streamlining the checkout process, I use my expertise in design and development to enhance the user experience and drive conversions. From product pages to shopping carts, I take a holistic approach to design and development to ensure that every aspect of the customer journey is optimized for success.</p>
+					<a href="#" class="cta-button">Work With Me</a>
 				</div>
 			</div>
 		</section>
@@ -99,7 +100,7 @@
 
 		<!-- Projects Section -->
 
-		<section class="projects-section">
+		<section class="projects-section" id="projects">
 			<div class="row container-fluid">
 				<div class="col">
 					<div class="projects-text">
@@ -128,8 +129,100 @@
 						<p class="text-center pt-3">Casa Code</p>
 					</div>
 				</div>
+				<!-- <a href="#" class="cta-button">Know Me More ✨</a> -->
 			</div>
 		</section>
+
+
+
+		<!-- Contact Page -->
+		<section class="container-fluid" id="contact">
+			<div class="row">
+				<div class="col left-contact">
+					<img src="./images/contact.jpeg" alt="Laptop on a Sofa" class="img-fluid"> 
+				</div>
+
+				<div class="col right-contact">
+					<div>
+						<div>
+							<p class="subheadline-1 text-uppercase px-auto ms-5">Contact Me</p>
+							<h1 class="hero-title px-auto ms-5">Let's Work Together</h1>
+							<p class="m-5 px-auto">I'd love to know your visions and see if I could help bring it to life! Let's get in touch by completing the form below.</p>
+						</div>
+
+						<form action="https://www.google.com">
+							<div class="mb-3">
+								<label for="name"  class="form-label">Name</label>
+								<input type="text" class="form-control" id="name" required autocomplete></input>
+							</div>
+							<div class="mb-3">
+								<label for="email" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="email"></input>
+							</div>
+							<div class="mb-3">
+								<label for="message"  class="form-label">Message</label>
+								<textarea name="message" rows="5" class="form-controlid" id="name" required autocomplete></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-primary">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Footer Section -->
+
+		<footer>
+			<div class="p-1 text-center footer-section row">
+				<div class="col-4">
+					<img src="./images/submark-white.png" class="footer-logo">
+				</div>
+				<div class="col-4 footer-col">
+					<h4 class="subheadline-1 text-uppercase footer-header">Links</h4>
+					<ul class="footer-nav-list">
+						<li>
+							<a class="footer-nav-link" href="#about">About</a>
+						</li>
+						<li>
+							<a class="footer-nav-link" href="#projects">Projects</a>
+						</li>
+						<li>
+							<a class="footer-nav-link" href="#contact">Contact</a>
+						</li>
+						<li>
+							<a class="footer-nav-link" href="#top">Back to Top</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-4 footer-col">
+					<h4 class="subheadline-1 text-uppercase footer-header">Get in Touch</h4>
+					<div class="contact-list-container">
+						<div class="contact-list">
+							<img src="./images/pin.png" alt="pin icon" class="footer-icons">
+							<p class="text-light get-in-touch-text">Zamboanga City, Philippines, 7000</p>
+						</div>
+						<div class="contact-list">
+							<img src="./images/envelope.png" alt="pin icon" class="footer-icons">
+							<p class="text-light get-in-touch-text">mtdesignco.ph@gmail.com</p>
+						</div>
+						<div class="contact-list">
+							<img src="./images/telephone.png" alt="pin icon" class="footer-icons">
+							<p class="text-light get-in-touch-text">+6393 5354 1042</p>
+						</div>
+					</div>
+					
+
+					
+				</div>
+
+				
+			</div>
+			<div class="row footer-section">
+				<p class="mt-3 copyright text-uppercase">COPYRIGHT © 2023 · Made with ♡ by Mica</p>
+			</div>
+		</footer>
 
 
 

@@ -103,6 +103,7 @@
 	margin-top: 0.5rem;
 	display: inline-block;
 	border-radius: 30px;
+	width: auto;
 }
 
 .cta-button:hover {
@@ -141,7 +142,7 @@ p {
 	max-width: 1024px;
 	margin: 0 auto;
 	padding-top: 9rem;
-	padding-bottom: 4rem;
+	margin-bottom: 9rem;
 }
 
 /* Projects Section */
@@ -157,7 +158,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	padding-left: 4rem;
-	padding-top: 5rem;
+	padding-top: 7rem;
 	padding-bottom: 2rem;
 }
 
@@ -176,8 +177,68 @@ p {
 .margin-left {
 	margin-left: 0px !important;
 	padding: 0 4rem;
-	margin-bottom: 5rem;
+	padding-bottom: 3rem;
 }
 
+/* Footer Section */
+.footer-section {
+	background-color: #B2BAA3;
+}
 
+.footer-logo {
+	height: 90px;
+	margin: 5rem 2rem;
+}
+
+.footer-header {
+	color: #FAF5EE;
+	text-align: left;
+}
+
+.footer-col {
+	text-align: left;
+	margin-top: 5rem;
+}
+
+.footer-nav-list {
+	list-style: none;
+	gap: 2rem;
+	padding-left: 0px !important;
+	line-height: 32px;
+	padding-top: 1rem;
+}
+
+.footer-nav-list a {
+	text-decoration: none;
+	color: #FAF5EE;
+}
+
+.contact-list-container {
+	padding-top: 1rem;
+}
+.contact-list {
+	display: flex;
+	align-items: center;
+}
+
+.get-in-touch-text {
+	color: #FAF5EE;
+	text-align: left;
+	line-height: 32px;
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+.footer-icons {
+	height: 16px;
+	margin-right: 0.75rem;
+}
+
+.copyright {
+	font-size: 13PX;
+    line-height: 1.6;
+    color: #FAF5EE;
+    margin-top: auto;
+    margin-left: 8rem;
+}
 
