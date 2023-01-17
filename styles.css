@@ -26,16 +26,17 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: white;
 	padding: 3rem;
 	padding-top: 2rem;
 	position: relative;
 	align-items: center;
+	position: sticky;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 1;
-	position: sticky; 
-	background-color: white;
+
 }
 
 .nav-logo {
@@ -68,6 +69,15 @@
 	text-decoration: none;
 	color: black;
 }
+
+/* Navbar Responsive */
+
+/*.navbar-responsive {
+	background-color: white;
+	width: 90%;
+}
+*/
+/* Hero Section */
 
 .section-hero {
 	/*height: 100vh;
@@ -214,21 +224,28 @@ p {
     font-size: 1rem;
 }
 
-.name-email {
+/*.name-email {
 	display: flex;
-}
+}*/
 
-input[type="text"] {
+/*input[type="text"] {
     width: 233px;
 }
 
 input[type="email"] {
     width: 233px;
-}
+}*/
 
-.form-fields {
+/*.form-fields {
 	margin-right: 113px;
 	margin-left: 113px;
+}*/
+
+.form-field:focus {
+  outline: 1px solid #D4805C;
+  box-shadow: none;
+}
+
 }
 
 .form-text {
@@ -250,7 +267,7 @@ input[type="email"] {
 /* Footer Section */
 .footer-section {
 	background-color: #B2BAA3;
-	margin-right: 0;
+	margin: 0;
 }
 
 .footer-logo {
@@ -317,3 +334,38 @@ input[type="email"] {
     padding-bottom: 2rem;
 }
 
+/* Media Queries */
+
+/* Mobile and Tablet */
+@media(max-width: 767px) {
+	.mica-photo {
+		max-width: 100%;
+	}
+	.right-hero {
+		height: auto;
+	}
+	.left-contact {
+		padding-left: 0rem;
+		padding-right: 0rem;
+	}
+	.about-mobile > h3 {
+		font-size: 1.5rem;
+	}
+	.projects-text {
+		padding-left: 0rem;
+	}
+	.contact-desc {
+		margin: 2rem 1.7rem;
+	}
+	.copyright {
+		padding-left: 0rem;
+	}
+}
+
+/* Tablet only */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* styles for tablet devices */
+  .text {
+    margin-left: 2rem;
+  }
+}
