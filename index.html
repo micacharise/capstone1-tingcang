@@ -30,7 +30,7 @@
 <body>
 
 	<!-- Navbar -->
-	<header class="header ">
+	<header class="header d-none d-md-flex">
 
 		<nav class="main-nav">
 			<ul class="main-nav-list">
@@ -60,6 +60,50 @@
 
 	</header>
 
+	<!-- End of Main Header -->
+
+	<!-- Mobile responsive header -->
+	<header class="d-md-none">
+		<nav class="navbar bg-body-tertiary fixed-top navbar-responsive">
+			<div class="container-fluid">
+				<!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+
+				<a href="#" class="navbar-brand">
+					<img src="./images/mica-charise-logo.png" alt="Mica logo" class="nav-logo">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-header">
+						<!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#projects">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#cta">Contact</a>
+							</li>
+							
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End of Mobile responsive header -->
+
 	
 
 	
@@ -69,17 +113,19 @@
 
 		<section class="container-fluid hero-container">
 			<div class="row">
-				<div class="col left-hero">
-					<div>
+				<div class="left-hero col-md-6 col-12">
+					<div class="text-center text-md-start m-md-4">
 						<p class="subheadline-1 text-uppercase">Kamusta, I'm Mica!</p>
 						<h1 class="hero-title">Designing for impact, developing for success</h1>
 						<a href="#cta" class="cta-button" id="hero">Work With Me ✨</a>
 					</div>
 					
 				</div>
-				<div class="col right-hero">
+				<div class="right-hero col-md-6 col-12 p-0">
 					<img src="./images/mica-photo.png" alt="Mica Photo" class="img-fluid mica-photo"> 
 				</div>
+
+				<!-- Mobile Respo -->
 			</div>
 		</section>
 
@@ -88,7 +134,7 @@
 
 		<section class="row about-container container-fluid" id="about">
 			<div class="col text-center ">
-				<div>
+				<div class="about-mobile">
 					<p class="text-uppercase subheadline-2">What I Do</p>
 					<h3 class="m-5 px-auto">I help e-commerce businesses increase their online sales through effective design and development solutions.</h3>
 					<p class="m-5 px-auto"> Whether it's creating a visually appealing website or streamlining the checkout process, I use my expertise in design and development to enhance the user experience and drive conversions. From product pages to shopping carts, I take a holistic approach to design and development to ensure that every aspect of the customer journey is optimized for success.</p>
@@ -101,30 +147,30 @@
 		<!-- Projects Section -->
 
 		<section class="projects-section" id="projects">
-			<div class="row container-fluid">
+			<div class="row container-fluid mx-0">
 				<div class="col">
-					<div class="projects-text">
+					<div class="projects-text text-md-start text-center">
 						<p class="text-uppercase subheadline">My Projects</p>
 						<h3 class="">Take a look at my work samples</h3>
 					</div>
 				</div>
 			</div>
 			<div class="row container-fluid margin-left">
-				<div class="col-4 justify-content-center align-items-center d-flex flex-column pb-5">
-					<img src="./images/1.png" class="project-images" alt="Elephant Moon Website Project">
+				<div class="col-md-4 col-12 justify-content-center align-items-center d-flex flex-column pb-5">
+					<img src="./images/1.png" class="project-images img-fluid" alt="Elephant Moon Website Project">
 					<div>
 						<p class="text-center pt-3">Elephant Moon</p>
 					</div>
 					
 				</div> 
-				<div class="col-4 justify-content-center align-items-center d-flex flex-column pb-5">
-					<img src="./images/2.png" class="project-images" alt="Squeaky Cats Website Project">
+				<div class="col-md-4 col-12 justify-content-center align-items-center d-flex flex-column pb-5">
+					<img src="./images/2.png" class="project-images img-fluid" alt="Squeaky Cats Website Project">
 					<div>
 						<p class="text-center pt-3">Squeaky Cats</p>
 					</div>
 				</div>
-				<div class="col-4 justify-content-center align-items-center d-flex flex-column pb-5">
-					<img src="./images/3.png" class="project-images" alt="Casa Code Website Project">
+				<div class="col-md-4 col-12 justify-content-center align-items-center d-flex flex-column pb-5">
+					<img src="./images/3.png" class="project-images img-fluid" alt="Casa Code Website Project">
 					<div>
 						<p class="text-center pt-3">Casa Code</p>
 					</div>
@@ -138,39 +184,40 @@
 		<!-- Contact Page -->
 		<section class="container-fluid" id="cta">
 			<div class="row contact-container">
-				<div class="col left-contact">
+				<div class="d-md-block d-none col left-contact">
 					<img src="./images/contact.jpeg" alt="Laptop on a Sofa" class="img-fluid contact-img"> 
 				</div>
 
-				<div class="col right-contact text-center">
+				<div class="col right-contact text-center px-5">
 					<div>
 						<div>
-							<p class="subheadline-1 text-uppercase px-auto ms-5">Contact Me</p>
-							<h1 class="hero-title px-auto ms-5">Let's Work Together</h1>
-							<p class="my-5 px-auto contact-desc">I'd love to know your visions and see if I could help bring it to life! Let's get in touch by completing the form below.</p>
+							<p class="subheadline-1 text-uppercase px-auto ms-md-5">Contact Me</p>
+							<h1 class="hero-title px-auto ms-md-5">Let's Work Together</h1>
+							<p class="my-md-5 px-auto contact-desc">I'd love to know your visions and see if I could help bring it to life! Let's get in touch by completing the form below.</p>
 						</div>
 
 						<form action="mailto:mtdesignco.ph@gmail.com?subject=Hey%2C%20Mica!%20I%20want%20to%20work%20with%20you">
-							<div class="form-fields">
-								<div class="name-email">
-									<div class="mb-3 pe-2 text-start">
+							<div class="m-0 m-md-2">
+								<div class="row">
+									<div class="col-md-6 col-12 mb-3 pe-2 text-start">
 										<label for="name"  class="form-label text-uppercase form-text">Name</label>
-										<input type="text" class="form-control" id="name"autocomplete/>
+										<input type="text" class="form-control form-field" id="name"autocomplete/>
 									</div>
-									<div class="mb-3 text-start">
+									<div class="col-md-6 col-12 mb-3 text-start">
 										<label for="email" class="form-label text-uppercase form-text">Email</label>
 										<span class="text-danger">*</span>
-										<input type="email" class="form-control" id="email" required autocomplete>
+										<input type="email" class="form-control form-field" id="email" required autocomplete>
 									</div>
 								</div>
 								<div class="mb-3 text-start">
 									<label for="message"  class="form-label text-uppercase form-text">Message</label>
 									<span class="text-danger">*</span>
-									<textarea name="message" rows="5" class="form-control" id="name" required></textarea>
+									<textarea name="message" rows="5" class="form-control form-field" id="name" required></textarea>
 								</div>
 								<div class="btn-container">
 									<button type="submit" class="btn btn-primary send-message-btn text-uppercase">Send Message</button>
 								</div>
+
 							</div>
 							
 
@@ -186,13 +233,13 @@
 
 		<footer>
 			<div class="p-1 text-center footer-section row">
-				<div class="col-4">
+				<div class="col-md-4 col-12">
 					<img src="./images/submark-white.png" class="footer-logo">
 				</div>
 
-				<div class="col-4 footer-col links-col">
-					<h4 class="subheadline-1 text-uppercase footer-header">Links</h4>
-					<ul class="footer-nav-list">
+				<div class="col-md-4 col-12 footer-col links-col">
+					<h4 class="subheadline-1 text-uppercase footer-header text-md-start text-center">Links</h4>
+					<ul class="footer-nav-list text-md-start text-center">
 						<li>
 							<a class="footer-nav-link" href="#about">About</a>
 						</li>
@@ -207,21 +254,24 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-4 footer-col">
-					<h4 class="subheadline-1 text-uppercase footer-header">Get in Touch</h4>
-					<div class="contact-list-container">
-						<div class="contact-list">
-							<img src="./images/pin.png" alt="pin icon" class="footer-icons">
-							<p class="text-light get-in-touch-text">Zamboanga City, Philippines, 7000</p>
+				<div class="col-md-4 col-12 footer-col">
+					<h4 class="subheadline-1 text-uppercase footer-header text-md-start text-center">Get in Touch</h4>
+					<div class="contact-list-container  d-flex justify-content-md-start justify-content-center pb-5">
+						<div>
+							<div class="contact-list">
+								<img src="./images/pin.png" alt="pin icon" class="footer-icons">
+								<p class="text-light get-in-touch-text">Zamboanga City, Philippines, 7000</p>
+							</div>
+							<div class="contact-list">
+								<img src="./images/envelope.png" alt="pin icon" class="footer-icons">
+								<p class="text-light get-in-touch-text">mtdesignco.ph@gmail.com</p>
+							</div>
+							<div class="contact-list">
+								<img src="./images/telephone.png" alt="pin icon" class="footer-icons">
+								<p class="text-light get-in-touch-text">+6393 5354 1042</p>
+							</div>
 						</div>
-						<div class="contact-list">
-							<img src="./images/envelope.png" alt="pin icon" class="footer-icons">
-							<p class="text-light get-in-touch-text">mtdesignco.ph@gmail.com</p>
-						</div>
-						<div class="contact-list">
-							<img src="./images/telephone.png" alt="pin icon" class="footer-icons">
-							<p class="text-light get-in-touch-text">+6393 5354 1042</p>
-						</div>
+						
 					</div>
 					
 
@@ -230,8 +280,8 @@
 
 				
 			</div>
-			<div class="row footer-section">
-				<p class="mt-3 copyright text-uppercase">COPYRIGHT © 2023 · Made with ♡ by Mica</p>
+			<div class="row footer-section px-0 gx-0">
+				<p class="mt-3 copyright text-uppercase text-md-start text-center">COPYRIGHT © 2023 · Made with ♡ by Mica</p>
 			</div>
 		</footer>
 
